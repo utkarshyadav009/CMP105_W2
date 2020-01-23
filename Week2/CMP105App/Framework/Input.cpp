@@ -16,7 +16,7 @@ void Input::setKeyUp(int key)
 	}
 }
 
-bool Input::isKeyDown(int key)
+bool Input:: m(int key)
 {
 	if (key >= 0)
 	{

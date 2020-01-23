@@ -18,7 +18,24 @@ Level::~Level()
 void Level::handleInput()
 {
 
+	
+		if (input->isKeyDown(sf::Keyboard::J) && input->isKeyDown(sf::Keyboard::K)&& input->isKeyDown(sf::Keyboard::L))
+		{
 
+			input->setKeyUp(sf::Keyboard::J);
+			input->setKeyUp(sf::Keyboard::K);
+			input->setKeyUp(sf::Keyboard::L);
+
+			std::cout << "J , K , L is pressed at the same time\n";
+
+		}
+
+			if (input->isKeyDown(sf::Keyboard::Escape))
+			{
+				window->close();
+			}
+	
+	
 }
 
 // Update game objects
